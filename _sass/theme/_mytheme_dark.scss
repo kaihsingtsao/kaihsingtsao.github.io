@@ -12,8 +12,9 @@ $lighter-gray               : mix(#fff, $gray, 90%);
 $background                 : #474747;
 $background-light           : mix(#fff, $background, 80%);
 $background-lighter         : mix(#fff, $background, 90%);
-$text                       : #ffffff;
-$link                       : #5371C6;
+$text                       : #e8dfdf;
+$text-lighter               : mix(#fff, $text, 80%);
+$link                       : #A6C9EC;
 $link-dark                  : mix(#000, $link, 25%);
 $link-light                 : mix(#fff, $link, 25%);
 
@@ -43,8 +44,8 @@ html[data-theme="dark"] {
     --global-footer-bg-color            : #{$background};
     --global-border-color               : #{$light-gray};
     --global-dark-border-color          : #{$background-light};
-    --global-code-background-color      : #fafafa;
-    --global-code-text-color            : #{$darker-gray};
+    --global-code-background-color      : {$background};
+    --global-code-text-color            : #{$text-lighter};
     --global-fig-caption-color          : #{$light-gray};
     --global-link-color                 : #{$link};
     --global-link-color-hover           : #{$link-dark};

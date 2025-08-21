@@ -7,11 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a PhD student at the University of Milan.
+My name is Kaixing Cao (in Chinese: 曹凯星, pinyin: cáo kǎi xīng)
 
-Here is my [CV](/assets/files/cv.pdf){:target="_blank"}.
+I am currently a PhD student at the University of Milan. Here is my [CV](/files/cv.pdf){:target="_blank"}.
 
-_Last updated on:_ {% capture cv_update %}{% include_relative assets/files/cv_update.txt %}{% endcapture %}{{ cv_update }}
+My research interests lie in arithmetic geometry; see [Research page](/research/) for more details.
 
-My research interests lie in arithmetic geometry.
+## Contact
 
+You can reach me via email: <a href="mailto:kaixing.cao@unimi.it">kaixing.cao@unimi.it</a>.
