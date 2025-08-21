@@ -85,9 +85,9 @@ author_profile: true
     </button>
 
     <!-- BibTeX with theme highlight -->
-    <pre style="margin:0; padding:0.75em; border-radius:0 0 8px 8px; overflow-x:auto;">
-      <code>{{ pub.bib | escape }}</code>
-    </pre>
+<pre style="margin:0; padding:0.75em; border-radius:0 0 8px 8px; overflow-x:auto; font-family: 'Fira Code', monospace;">
+  <code>{{ pub.bib | escape }}</code>
+</pre>
 
   </div>
 </details>
