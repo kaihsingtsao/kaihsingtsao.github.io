@@ -33,7 +33,9 @@ links:
     url: https://github.com/kaihsingtsao
     icon: fab fa-github
 
-
+collections:
+  pages:
+    output: true   # 确保 _pages 下的文件会生成 HTML
 
 
 
