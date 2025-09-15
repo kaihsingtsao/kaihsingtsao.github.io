@@ -1,25 +1,19 @@
-{% include base_path %}
-
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
-  {% endif %}
+<div class="sidebar-content">
+  <div class="profile">
+    <div class="avatar-wrapper">
+       <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
+    </div>
+    <h2>{{ site.author.name }}</h2>
+    <p>{{ site.author.institution }}</p>
+    <div class="social-links">
+      {% for link in site.links %}
+        <div class="social-link">
+          <i class="{{ link.icon }}"></i>
+          <a href="{{ link.url }}" >{{ link.name }}</a>
+        </div>
+      {% endfor %}
+    </div>
   </div>
-{% endif %}
+</div>
+
+

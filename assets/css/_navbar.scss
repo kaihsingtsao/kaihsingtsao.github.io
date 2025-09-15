@@ -1,0 +1,46 @@
+/* 导航栏 */
+@use "variables" as *;
+
+.navbar {
+    position: fixed;   /* 固定在顶部 */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;     /* 确保在内容上层 */
+  height: $masthead-height; 
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid var(--border-color);  
+  display: flex;
+   justify-content: flex-end; /* 导航链接靠右 */
+   align-items: baseline;       
+  padding: 0 2em;            /* 左右间距 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 可选阴影 */
+}
+
+.navbar a {
+  margin: 0 1.5em;           /* 左右间距 */
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 1em;
+  line-height: $masthead-height;  /* 与 navbar 高度相同 */
+}
+
+.navbar a:first-child {
+  font-weight: bold;    // 加粗
+  font-size: 1.2em;     // 增大字体，可调整
+  line-height: $masthead-height;  /* 与 navbar 高度相同 */
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: currentColor;  /* 下划线颜色与文字一致 */
+  text-decoration-thickness: 5px;       /* 下划线粗细 */
+  text-underline-offset: 9px;           /* 下划线离文字的距离 */
+}
+
+hr {
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}

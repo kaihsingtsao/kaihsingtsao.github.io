@@ -1,1 +1,0 @@
-My personal website: [https://kaihsingtsao.github.io](https://kaihsingtsao.github.io)

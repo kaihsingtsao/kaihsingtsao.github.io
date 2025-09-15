@@ -1,0 +1,12 @@
+@use "colors" as *;
+
+html[data-theme="dark"] {
+  --bg-color: #{$background-dark};
+  --text-color: #{$text-dark};
+  --textlight-color: #{$textlight-dark};
+  --link-color: #{$link-dark};
+  --border-color: #{$border-dark};
+  --navbar-bg: #{$background-dark};
+  --footer-bg: #{$background-dark};
+  --footer-text: #f3f3f3;
+}

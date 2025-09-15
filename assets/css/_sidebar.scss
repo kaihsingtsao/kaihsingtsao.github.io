@@ -1,0 +1,97 @@
+/* 左侧 sidebar */
+@use "variables" as *;
+.sidebar {
+    position: sticky;   /* 粘性定位 */
+    top: $masthead-height + 16px;  /* 离导航栏一定距离 */
+    margin-left: 100px;
+  align-self: flex-start;
+  overflow-y: auto;   /* 如果内容过长可滚动 */
+  width: 200px;
+  padding: 20px;
+  background-color: #fff;
+  flex-shrink: 0;
+  background-color: var(--bg-color);
+  font-size: 20px;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 水平居中 */
+}
+
+/* 名字、单位、社交链接左对齐 */
+.profile h2,
+.profile p,
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  text-align: left;   /* 名字和单位左对齐 */
+  flex-direction: column; /* 每个 link 一行 */
+  gap: 5px;
+}
+
+/* 左栏标题 */
+.profile h2 {
+    margin: 0 0 3px 0;
+   font-size: 1.1em;
+}
+
+.profile p {
+    font-size: 1em; 
+}    
+
+
+/* 社交链接 */
+.social-links {
+    margin-top: 10px;
+    align-items: left;
+    gap: 8px; /* icon 和文字间距 */
+    font-size: 0.75em;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+
+.social-link i {
+  width: 20px;           /* 固定图标宽度 */
+  text-align: center;
+  color: var(--global-text-color);
+  flex-shrink: 0;        /* 避免图标被压缩 */
+}
+
+
+
+/* 左栏头像 */
+.avatar-wrapper {
+  width: 180px;              /* 外圈直径 */
+  height: 180px;
+  border-radius: 50%;         /* 外圈圆形 */
+  border: 2px solid var(--border-color); /* 外圈颜色和 navbar 一致 */
+  padding: 5px;               /* 内部留空部分，显示背景色 */
+  background-color: var(--bg-color);  /* 背景色，与 sidebar 背景一致 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px auto;  /* 居中并下方间距 */
+}
+
+.avatar-wrapper img {
+  width: 100%;               /* 填满内部留空部分 */
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+}
+
+
+

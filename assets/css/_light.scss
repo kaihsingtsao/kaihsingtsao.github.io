@@ -1,0 +1,12 @@
+@use "colors" as *;
+
+:root {
+  --bg-color: #{$background-light};
+  --text-color: #{$text-light};
+  --textlight-color: #{$textlight-light};
+  --link-color: #{$link-light};
+  --border-color: #{$border-light};
+  --navbar-bg: #{$background-light};
+  --footer-bg: #111;
+  --footer-text: #{$lighter-gray};
+}

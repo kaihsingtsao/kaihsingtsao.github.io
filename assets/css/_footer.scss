@@ -1,0 +1,48 @@
+/* 页脚 */
+footer {
+  text-align: center;
+  padding: 1em 2em;
+  margin-top: 20px;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: left;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.05); /* 上方微阴影 */
+  position: relative; /* 相对定位，方便动画 */
+  transition: transform 0.3s ease; /* 动画效果 */
+  font-size: 0.75rem;
+}
+
+.footer-content{
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}    
+ 
+
+footer:hover {
+  transform: translateY(-2px);
+}
+
+
+footer a {
+    font-weight: bold;
+  color: var(--footer-text); /* 自定义变量或直接写颜色 */
+  text-decoration: none;           /* 去掉下划线 */
+  transition: color 0.3s ease;     /* 悬停时平滑过渡 */
+}
+
+footer a:hover {
+  text-decoration: underline;      /* 或保持无下划线 */
+}
+
+.footer-content p {
+  margin: 0.3em 0;           /* 每行间距 */
+}
+
+/* 分割线 */
+hr {
+  border: none;                 /* 去掉默认边框 */
+  height: 2px;                  /* 分割线厚度 */
+  background-color: var(--border-color, #ccc); /* 分割线颜色，默认浅灰 */
+  margin: 2em 0;                /* 上下间距 */
+}

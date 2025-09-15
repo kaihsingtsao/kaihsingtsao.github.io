@@ -2,30 +2,59 @@
 layout: compress
 ---
 
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<!DOCTYPE html>
+<html lang="en">
+  <body id="top">
+  <!-- 页面内容开始 -->
   <head>
-    {% include head.html %}
-    {% include head/custom.html %}
+  <meta charset="UTF-8">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&family=Delius+Swash+Caps&family=Fira+Code:wght@300..700&family=Ma+Shan+Zheng&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+
+  <!-- Icon CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
   </head>
+  
+ 
+  
+<body>
+{% if site.site_theme == "dark" %}data-theme="dark"{% endif %}
+  {% include masthead.html %}
 
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
-    </div>
-
-    {% include scripts.html %}
-
-  </body>
+  <div class="container">
+    <aside class="sidebar">
+      {% include sidebar.html %}
+    </aside>
+    <main class="content">
+      {{ content }}
+    </main>
+    <!-- Back to top 链接 -->
+  <a href="#top" class="back-to-top">↑ Back to top</a>
+  </div>
+  {% include footer.html %}
+</body>
+</footer>
 </html>
+
+

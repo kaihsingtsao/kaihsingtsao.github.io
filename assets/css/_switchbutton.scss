@@ -1,0 +1,31 @@
+.theme-btn {
+    display: inline-block;   /* 伪元素宽度只跟文字宽度相关 */
+  position: relative;
+  background: none;     /* 去掉默认背景 */
+  border: none;         /* 去掉方框 */
+  cursor: pointer;      /* 鼠标变小手 */
+  font-size: 1.2rem;    /* 控制图标大小，可以调 */
+  padding: 0.5rem;      /* 点击范围大一些 */
+  margin-left: 1rem;    /* 跟前面导航项留点间距 */
+  color : var(--text-color);
+  text-decoration: none;
+  &:hover {
+text-decoration: underline;
+  }
+}
+
+
+.theme-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;                 /* 下划线粗细 */
+  background-color: currentColor;
+  transition: width 0.2s ease;
+}
+
+.theme-btn:hover::after {
+  width: 100%;
+}
