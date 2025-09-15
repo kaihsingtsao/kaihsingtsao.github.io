@@ -100,13 +100,12 @@ body {
 
 /* 响应式：小屏幕左栏收缩 */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
   .sidebar {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #ccc;
+    display: none; /* 完全隐藏 sidebar */
+  }
+
+  .container {
+    flex-direction: column; /* 内容区依然纵向排列，可视情况保留 */
   }
 }
 
