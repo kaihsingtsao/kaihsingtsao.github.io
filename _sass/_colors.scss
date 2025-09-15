@@ -1,16 +1,16 @@
-@use "sass:color";
+
 
 /* 基础灰色 */
 $gray                       : #7a8288;
-$dark-gray                  : color.mix(#000, $gray, 40%);
-$darker-gray                : color.mix(#000, $gray, 60%);
-$lightless-gray             : color.mix(#fff, $gray, 30%);
-$light-gray                 : color.mix(#fff, $gray, 50%);
-$lighter-gray               : color.mix(#fff, $gray, 90%);
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$lightless-gray             : mix(#fff, $gray, 30%);
+$light-gray                 : mix(#fff, $gray, 50%);
+$lighter-gray               : mix(#fff, $gray, 90%);
 
 $black                      : #474747;
-$black-light                : color.mix(#fff, $black, 80%);
-$black-lighter              : color.mix(#fff, $black, 90%);
+$black-light                : mix(#fff, $black, 80%);
+$black-lighter              : mix(#fff, $black, 90%);
 
 
 /* 颜色 */
@@ -29,10 +29,10 @@ $text-light                 : #{$dark-gray};
 $text-dark                  : #e8dfdf;
 
 $textlight-light          : #{$gray};
-$textlight-dark           : color.mix(#fff, $text-dark, 80%);
+$textlight-dark           : mix(#fff, $text-dark, 80%);
 
 /* border */
-$border-light               : color.mix(#000, $gray, 25%);
+$border-light               : mix(#000, $gray, 25%);
 $border-dark                : #e8dfdf;
 
 /* links */

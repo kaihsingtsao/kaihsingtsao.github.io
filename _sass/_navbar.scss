@@ -1,5 +1,5 @@
 /* 导航栏 */
-@use "variables" as *;
+@import "variables";
 
 .navbar {
     position: fixed;   /* 固定在顶部 */

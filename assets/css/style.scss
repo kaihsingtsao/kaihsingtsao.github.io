@@ -2,12 +2,12 @@
 ---
 
 /* 引入变量和主题 */
-@use "colors";
-@use "light";
-@use "dark";
-@use "base";
-@use "switchbutton";
-@use "variables" as *;
+@import "colors";
+@import "light";
+@import "dark";
+@import "base";
+@import "switchbutton";
+@import "variables";
 
 
 

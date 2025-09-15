@@ -1,5 +1,5 @@
 /* 左侧 sidebar */
-@use "variables" as *;
+@import "variables";
 .sidebar {
     position: sticky;   /* 粘性定位 */
     top: $masthead-height + 16px;  /* 离导航栏一定距离 */

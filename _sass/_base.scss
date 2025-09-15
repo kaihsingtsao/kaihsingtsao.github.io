@@ -1,9 +1,9 @@
 // _base.scss //
-@use "navbar";
-@use "sidebar";
-@use "content";
-@use "footer";
-@use "variables" as *;
+@import "navbar";
+@import "sidebar";
+@import "content";
+@import "footer";
+@import "variables";
 
 /* 正文：Delius */
 body {
