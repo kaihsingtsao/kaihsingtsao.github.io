@@ -26,12 +26,15 @@ links:
   - name: ORCID
     url: https://orcid.org/0009-0000-6785-8755
     icon: fab fa-orcid
+    new_tag: true
   - name: ArXiv
     url: https://arxiv.org/a/0009-0000-6785-8755.html
     icon: ai ai-arxiv
+    new_tag: true
   - name: GitHub
     url: https://github.com/kaihsingtsao
     icon: fab fa-github
+    new_tag: true
 
 collections:
   pages:

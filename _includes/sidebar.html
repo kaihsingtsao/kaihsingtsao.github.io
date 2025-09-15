@@ -7,9 +7,11 @@
     <p>{{ site.author.institution }}</p>
     <div class="social-links">
       {% for link in site.links %}
-        <div class="social-link">
-          <i class="{{ link.icon }}"></i>
-          <a href="{{ link.url }}" >{{ link.name }}</a>
+      <div class="social-link">
+	<i class="{{ link.icon }}"></i>
+	<a href="{{ link.url }}"
+	   {% if link.new_tag %} target="_blank" rel="noopener" {% endif %}>
+        {{ link.name }}</a> 	
         </div>
       {% endfor %}
     </div>
